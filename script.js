@@ -38,7 +38,7 @@ function playersName(names) {
         playersNameArray.push(player);
     }
     else {
-        alert('You cannot  selected more then five players !!  So please refresh this page !!');
+        alert('You cannot  selected more then five players !!');
         return;
     }
 
