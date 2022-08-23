@@ -5,9 +5,11 @@ let playersNameArray = [];
 
 //  -----------for display function----------
 
+
 function display(playersName) {
     let orderList = document.getElementById('players-list');
     orderList.innerText = '';
+
     if (playersName.length <= 5) {
         for (let i = 0; i < playersName.length; i++) {
             let name = playersNameArray[i];
@@ -23,6 +25,7 @@ function display(playersName) {
 
 }
 //  ----------disabled button function-----------
+
 function disabled(names) {
     names.style.backgroundColor = 'gray';
     names.disabled = true;
@@ -34,17 +37,13 @@ function disabled(names) {
 function playersName(names) {
 
     let players = names.parentNode.children[0].innerText;
-
-
     let player = [players];
     playersNameArray.push(player);
 
     display(playersNameArray);
     document.getElementById('select-number').innerText = playersNameArray.length;
+
     disabled(names)
-
-
-
 }
 
 
