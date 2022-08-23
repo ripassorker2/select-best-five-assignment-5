@@ -16,6 +16,8 @@ function display(playersName) {
         orderList.appendChild(li);
     }
 }
+
+
 //  ----------disabled button function-----------
 
 function disabled(names) {
@@ -23,6 +25,7 @@ function disabled(names) {
     names.disabled = true;
     return;
 }
+
 
 // ---------main function-------------
 
@@ -59,13 +62,13 @@ function inputAmoutFeild(id) {
 
 function perPlayerTotalAmount() {
     let perPlayer = inputAmoutFeild('per-player-feild');
-
     let totalAmount = playersNameArray.length * perPlayer;
     return totalAmount;
 
 }
 
 //  ---------------frist calculate button---------------
+
 
 document.getElementById('frist-calculate-btn').addEventListener('click', function () {
     let totalAmount = perPlayerTotalAmount();
@@ -75,10 +78,7 @@ document.getElementById('frist-calculate-btn').addEventListener('click', functio
     let totalExpenses = document.getElementById('total-expenses');
     totalExpenses.innerText = totalAmount;
     return totalAmount;
-
-
 })
-
 
 //  ---------------second calculate button---------------
 
@@ -103,5 +103,3 @@ document.getElementById('last-calculate-btn').addEventListener('click', function
     finalAmount.innerText = finalTotalAmount;
 
 })
-
-
